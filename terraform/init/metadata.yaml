@@ -1,0 +1,13 @@
+#cloud-config
+disable_root: true
+timezone: Europe/Moscow
+repo_update: true
+repo_upgrade: true
+apt:
+  preserve_sources_list: true
+
+runcmd:
+  - [ curl, -fsSL, https://get.docker.com, -o, get-docker.sh ]
+  - [ sh, get-docker.sh ]
+  - [ docker, pull, michaeldecortix/flask-image-resize-app ]
+  - [ docker, run, -dp, 5000:5000, michaeldecortix/flask-image-resize-app ]
