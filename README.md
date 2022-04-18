@@ -3,6 +3,7 @@ Easy Deployment Application. Contains the Flask-images library and its demo appl
 
 Warning: Use this repository as an example. It may contain errors and silly solutions. 
 
+```
 Pipeline:
 -Terraform | Cloud Configuration
 --terraform/[main.tf, network.tf, output.tf, variables.tf]
@@ -14,3 +15,4 @@ Pipeline:
 --app/main.py
 -Flask-images | Python library
 --app/lib
+```
