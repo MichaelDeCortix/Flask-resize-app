@@ -7,12 +7,16 @@ Pipeline:
 ```
 -Terraform | Cloud Configuration
 --terraform/[main.tf, network.tf, output.tf, variables.tf]
+
 -Cloud-init | VM tools
 --terraform/init/metadata.yaml
+
 -Docker | VM container
 --app/Dockerfile
+
 -Flask | Python library
 --app/main.py
+
 -Flask-images | Python library
 --app/lib
 ```
